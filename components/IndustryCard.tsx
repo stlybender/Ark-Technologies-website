@@ -5,12 +5,39 @@ interface IndustryCardProps {
     name: string;
     icon: string;
     color: string;
-    bgColor: string;
     problems: string[];
     solution: string;
     outcomes: string[];
   };
 }
+
+// Icon component renderer
+const SectorIcon = ({ iconType }: { iconType: string }) => {
+  const iconProps = "w-6 h-6";
+  
+  switch (iconType) {
+    case 'building':
+      return (
+        <svg className={iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      );
+    case 'dollar':
+      return (
+        <svg className={iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      );
+    case 'medical':
+      return (
+        <svg className={iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+};
 
 // Color mapping for dynamic classes
 const colorClasses: Record<string, { bg: string; text: string; border: string; gradient: string }> = {
@@ -41,11 +68,11 @@ export default function IndustryCard({ sector }: IndustryCardProps) {
     <div className="h-full w-full flex items-center">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 w-full">
         {/* Compact Header */}
-        <div className="flex items-center gap-2.5 mb-4">
-          <div className={`flex items-center justify-center w-11 h-11 rounded-lg ${colors.bg} text-3xl`}>
-            {sector.icon}
+        <div className="flex items-center gap-3 mb-4">
+          <div className={`flex items-center justify-center w-11 h-11 rounded-lg ${colors.bg} ${colors.text}`}>
+            <SectorIcon iconType={sector.icon} />
           </div>
-          <h3 className="text-xl md:text-2xl font-bold text-text-primary">{sector.name}</h3>
+          <h3 className="text-xl md:text-3xl font-semibold text-text-primary">{sector.name}</h3>
         </div>
 
         {/* Compact Two-Column Layout */}
@@ -112,4 +139,3 @@ export default function IndustryCard({ sector }: IndustryCardProps) {
     </div>
   );
 }
-

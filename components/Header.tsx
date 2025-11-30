@@ -23,7 +23,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <Image 
               src="/ark-logo.svg" 
               alt="Ark Technologies" 
@@ -32,25 +32,28 @@ export default function Header() {
               priority
             />
             <span className="text-2xl font-bold text-text-primary">Ark</span>
-          </div>
+          </a>
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#capabilities" className="text-text-secondary hover:text-ark-blue transition-colors">
-              Platform
+            <a href="/" className="text-text-secondary hover:text-ark-blue transition-colors">
+              Home
             </a>
-            <a href="#case-studies" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/about" className="text-text-secondary hover:text-ark-blue transition-colors">
+              About
+            </a>
+            <a href="/how-we-work" className="text-text-secondary hover:text-ark-blue transition-colors">
+              Our Steps
+            </a>
+            <a href="/case-studies" className="text-text-secondary hover:text-ark-blue transition-colors">
               Case Studies
-            </a>
-            <a href="#security" className="text-text-secondary hover:text-ark-blue transition-colors">
-              Security
             </a>
           </nav>
 
           {/* CTA Button */}
-          <button className="bg-ark-blue hover:bg-ark-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
+          <a href="/contact" className="bg-ark-blue hover:bg-ark-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
             Book a Demo
-          </button>
+          </a>
         </div>
       </div>
     </header>

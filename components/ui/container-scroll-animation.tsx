@@ -37,7 +37,7 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="h-[35rem] md:h-[40rem] flex items-center justify-center relative p-2 md:p-4"
+      className="h-[46rem] md:h-[48rem] flex items-center justify-center relative p-2 md:p-4"
       ref={containerRef}
     >
       <div
@@ -88,15 +88,14 @@ export const Card = ({
           "0 0 #0000004d, 0 9px 20px rgba(15, 76, 129, 0.15), 0 37px 37px rgba(15, 76, 129, 0.12), 0 84px 50px rgba(15, 76, 129, 0.08), 0 149px 60px rgba(15, 76, 129, 0.04), 0 233px 65px rgba(15, 76, 129, 0.02)",
       }}
       transition={{ ease: "easeInOut" }}
-      className="max-w-5xl -mt-6 mx-auto h-[26rem] md:h-[30rem] w-full border-4 border-ark-blue p-2 md:p-4 bg-white rounded-[30px] shadow-2xl"
+      className="max-w-5xl mt-0 mx-auto h-[32rem] md:h-[34rem] w-full border-4 border-ark-blue p-2 md:p-4 bg-white rounded-[30px] shadow-2xl"
     >
-      <div className="h-full w-full overflow-hidden rounded-2xl bg-bg-secondary md:rounded-2xl md:p-4">
+      <div className="h-full w-full overflow-y-auto rounded-2xl bg-bg-secondary md:rounded-2xl md:p-4">
         {children}
       </div>
     </motion.div>
   );
 };
-
 export const ContainerScrollWithIndustries = ({
   titleComponent,
   industries,
@@ -176,4 +175,5 @@ export const ContainerScrollWithIndustries = ({
     </div>
   );
 };
+
 

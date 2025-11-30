@@ -45,12 +45,12 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <button className="bg-ark-blue hover:bg-ark-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl">
+          <a href="/#contact" className="bg-ark-blue hover:bg-ark-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl">
             Book a Demo
-          </button>
-          <button className="border-2 border-ark-cyan text-ark-cyan hover:bg-ark-cyan-pale px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200">
+          </a>
+          <a href="/how-we-work" className="border-2 border-ark-cyan text-ark-cyan hover:bg-ark-cyan-pale px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200">
             See How It Works
-          </button>
+          </a>
         </div>
 
         {/* Trust Badges */}

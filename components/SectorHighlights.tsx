@@ -6,9 +6,8 @@ import IndustryCard from '@/components/IndustryCard';
 const sectors = [
   {
     name: 'Real Estate',
-    icon: '🏢',
+    icon: 'building',
     color: 'ark-blue',
-    bgColor: 'ark-blue-pale',
     problems: [
       'Slow lead response from portals/ads',
       'Manual calling + inconsistent qualification',
@@ -23,9 +22,8 @@ const sectors = [
   },
   {
     name: 'Banking & Wealth',
-    icon: '💰',
+    icon: 'dollar',
     color: 'ark-orange',
-    bgColor: 'ark-orange-pale',
     problems: [
       'Manual KYC and MF form filling',
       'Slow SIP registration',
@@ -40,9 +38,8 @@ const sectors = [
   },
   {
     name: 'Healthcare',
-    icon: '🏥',
+    icon: 'medical',
     color: 'ark-purple',
-    bgColor: 'ark-purple-pale',
     problems: [
       'Doctors overburdened with EMR/EHR documentation',
       'Radiology reports stored as free text',
@@ -59,26 +56,11 @@ const sectors = [
 
 export default function SectorHighlights() {
   return (
-    <section className="py-8 bg-bg-secondary relative overflow-hidden">
-      {/* Decorative Background Elements */}
+    <section id="capabilities" className="py-8 bg-bg-secondary relative overflow-hidden">
+      {/* Subtle gradient overlays */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Subtle gradient overlays */}
         <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-ark-blue/5 via-transparent to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-ark-purple/5 via-transparent to-transparent"></div>
-        
-        {/* Geometric shapes */}
-        <div className="absolute top-20 right-10 w-64 h-64 bg-ark-blue/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 left-10 w-96 h-96 bg-ark-orange/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-ark-purple/5 rounded-full blur-3xl"></div>
-        
-        {/* Dot pattern */}
-        <div 
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: 'radial-gradient(circle, rgba(15, 76, 129, 0.1) 1px, transparent 1px)',
-            backgroundSize: '40px 40px'
-          }}
-        ></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
@@ -97,13 +79,13 @@ export default function SectorHighlights() {
       </div>
 
       {/* Stacked Industry Cards with Scroll Animation */}
-      <div className="-space-y-16 md:-space-y-20 relative z-10">
+      <div className="-space-y-8 md:-space-y-10 relative z-10">
         {sectors.map((sector, index) => (
           <ContainerScroll
             key={index}
             titleComponent={
-              <div className="mb-3">
-                <h3 className="text-xl md:text-2xl font-bold text-text-primary">
+              <div className="mb-16 md:mb-14">
+                <h3 className="text-3xl md:text-4xl font-semibold text-text-primary">
                   {sector.name}
                 </h3>
               </div>

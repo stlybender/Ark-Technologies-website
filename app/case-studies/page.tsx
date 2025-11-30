@@ -55,8 +55,37 @@ export default function CaseStudiesPage() {
     }
   };
 
+  // Structured Data for BreadcrumbList
+  const breadcrumbStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://arktechnologies.ai',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Case Studies',
+        item: 'https://arktechnologies.ai/case-studies',
+      },
+    ],
+  };
+
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
+
+      <main className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -152,6 +181,7 @@ export default function CaseStudiesPage() {
               Book a demo to see how Ark can transform your operations
             </p>
             <button 
+              onClick={() => window.location.href = '/#contact'}
               className="bg-white text-ark-blue hover:bg-white/90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
               aria-label="Book a demo with Ark"
             >
@@ -163,6 +193,7 @@ export default function CaseStudiesPage() {
 
       <Footer />
     </main>
+    </>
   );
 }
 
