@@ -76,7 +76,7 @@ const StepConnector = ({ color = "#0F4C81" }: StepConnectorProps) => {
           transition={{
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.4, 0, 0.6, 1] as const,
           }}
         />
       </motion.div>
