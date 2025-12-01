@@ -25,7 +25,7 @@ export default function Header() {
           {/* Logo */}
           <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <Image 
-              src="/ark-logo.svg" 
+              src="/ark-logo.png" 
               alt="Ark Technologies" 
               width={48} 
               height={48}
@@ -47,6 +47,9 @@ export default function Header() {
             </a>
             <a href="/case-studies" className="text-text-secondary hover:text-ark-blue transition-colors">
               Case Studies
+            </a>
+            <a href="/contact" className="text-text-secondary hover:text-ark-blue transition-colors">
+              Contact Us
             </a>
           </nav>
 
