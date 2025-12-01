@@ -29,13 +29,13 @@ export const ContainerScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [0.90, 0.97, 0.95] : [1.02, 1, 0.98];
+    return isMobile ? [0.85, 0.95, 0.93] : [1.02, 1, 0.98];
   };
 
-  // Simplified rotation for mobile - remove rotateX on mobile for smoother performance
-  const rotate = useTransform(scrollYProgress, [0, 0.5, 1], isMobile ? [0, 0, 0] : [12, 0, -5]);
+  // Keep 3D rotation on mobile but slightly reduced for smoothness
+  const rotate = useTransform(scrollYProgress, [0, 0.5, 1], isMobile ? [10, 0, -4] : [12, 0, -5]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 0.5, 1], isMobile ? [10, 0, -10] : [20, 0, -20]);
+  const translate = useTransform(scrollYProgress, [0, 0.5, 1], [20, 0, -20]);
 
   return (
     <div
@@ -48,7 +48,7 @@ export const ContainerScroll = ({
       <div
         className="py-2 md:py-3 w-full relative"
         style={{
-          perspective: isMobile ? "none" : "1000px",
+          perspective: isMobile ? "800px" : "1000px",
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} shouldReduceMotion={shouldReduceMotion} />
@@ -153,13 +153,13 @@ export const ContainerScrollWithIndustries = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [0.85, 0.95] : [1.05, 1];
+    return isMobile ? [0.7, 0.9] : [1.05, 1];
   };
 
-  // Simplified rotation for mobile
-  const rotate = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [20, 0]);
+  // Keep 3D rotation on mobile but slightly reduced for smoothness
+  const rotate = useTransform(scrollYProgress, [0, 1], isMobile ? [16, 0] : [20, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], isMobile ? [0, -50] : [0, -100]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   // Map scroll progress to industry index (split evenly across scroll range)
   const [currentIndustryIndex, setCurrentIndustryIndex] = React.useState(0);
@@ -188,7 +188,7 @@ export const ContainerScrollWithIndustries = ({
       <div
         className="py-4 md:py-10 w-full relative"
         style={{
-          perspective: isMobile ? "none" : "1000px",
+          perspective: isMobile ? "800px" : "1000px",
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} shouldReduceMotion={shouldReduceMotion} />
