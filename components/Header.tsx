@@ -43,7 +43,7 @@ export default function Header() {
               About
             </a>
             <a href="/how-we-work" className="text-text-secondary hover:text-ark-blue transition-colors">
-              Our Steps
+              Our Process
             </a>
             <a href="/case-studies" className="text-text-secondary hover:text-ark-blue transition-colors">
               Case Studies

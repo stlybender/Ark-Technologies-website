@@ -43,7 +43,7 @@ const HowWeWorkSection = () => {
           className="mb-16 text-center"
         >
           <h1 className="text-4xl font-bold text-text-primary sm:text-5xl lg:text-6xl">
-            Our Steps
+            Our Process
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-text-secondary sm:text-xl">
             From discovery to delivery, we follow a proven process to transform your business 

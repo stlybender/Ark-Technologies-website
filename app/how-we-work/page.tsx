@@ -4,7 +4,7 @@ import HowWeWorkSection from '@/components/HowWeWorkSection';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata = {
-  title: 'Our Steps – Ark Enterprise AI',
+  title: 'Our Process – Ark Enterprise AI',
   description: 'From discovery to deployment, see how Ark delivers measurable impact in weeks, not months.',
 };
 
@@ -16,7 +16,7 @@ export default function HowWeWorkPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <Breadcrumb items={[
             { label: 'Home', href: '/' },
-            { label: 'Our Steps', href: '/how-we-work' }
+            { label: 'Our Process', href: '/how-we-work' }
           ]} />
         </div>
       </div>

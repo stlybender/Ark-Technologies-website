@@ -43,7 +43,7 @@ export default function Home() {
             contactPoint: {
               '@type': 'ContactPoint',
               contactType: 'Sales',
-              email: 'hello@arktechnologies.ai',
+              email: 'contact@arktechnologies.ltd',
               url: 'https://arktechnologies.ai/contact',
             },
           }),

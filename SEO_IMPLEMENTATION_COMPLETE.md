@@ -38,7 +38,7 @@ All tasks from the SEO interlinking plan have been successfully implemented. Her
 
 #### Footer.tsx:
 - Updated all Company links: About (`/about`), Careers (`/careers`), Contact (`/contact`)
-- Updated all Product links: Platform (`/#capabilities`), Case Studies (`/case-studies`), Integrations (`/integrations`), Our Steps (`/how-we-work`)
+- Updated all Product links: Platform (`/#capabilities`), Case Studies (`/case-studies`), Integrations (`/integrations`), Our Process (`/how-we-work`)
 - Updated all Legal links: Privacy (`/privacy`), Terms (`/terms`), Security (`/security`)
 - Added real social media URLs (placeholders for LinkedIn and Twitter)
 
@@ -79,7 +79,7 @@ All tasks from the SEO interlinking plan have been successfully implemented. Her
 ### Header Links:
 - ✅ Home → `/`
 - ✅ About → `/about`
-- ✅ Our Steps → `/how-we-work`
+- ✅ Our Process → `/how-we-work`
 - ✅ Case Studies → `/case-studies`
 - ✅ Platform → `/#capabilities`
 - ✅ Book a Demo → `/contact`
@@ -91,7 +91,7 @@ All tasks from the SEO interlinking plan have been successfully implemented. Her
 - ✅ Platform → `/#capabilities`
 - ✅ Case Studies → `/case-studies`
 - ✅ Integrations → `/integrations`
-- ✅ Our Steps → `/how-we-work`
+- ✅ Our Process → `/how-we-work`
 - ✅ Privacy Policy → `/privacy`
 - ✅ Terms of Service → `/terms`
 - ✅ Security → `/security`

@@ -47,17 +47,31 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
 
     setStatus('submitting');
     
-    // TODO: Replace with actual API call
-    // For now, simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setStatus('success');
-      setFormData({ name: '', email: '', company: '', message: '' });
-      setErrors({});
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setStatus('idle'), 5000);
-    }, 1000);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', company: '', message: '' });
+        setErrors({});
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('error');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -87,6 +101,26 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
         </div>
         <h4 className="text-xl font-semibold text-text-primary mb-2">Thank you!</h4>
         <p className="text-text-secondary">We'll get back to you within 24 hours.</p>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className={`py-12 text-center ${className}`}>
+        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h4 className="text-xl font-semibold text-text-primary mb-2">Something went wrong</h4>
+        <p className="text-text-secondary mb-4">We couldn't send your message. Please try again.</p>
+        <button
+          onClick={() => setStatus('idle')}
+          className="text-ark-blue hover:underline font-semibold"
+        >
+          Try Again
+        </button>
       </div>
     );
   }

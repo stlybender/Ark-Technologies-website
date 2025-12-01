@@ -122,8 +122,8 @@ export default function ContactPage() {
                   <span className="font-semibold text-text-primary">Prefer email?</span>
                   <br />
                   Reach us at{' '}
-                  <a href="mailto:hello@arktechnologies.ai" className="text-ark-blue hover:underline">
-                    hello@arktechnologies.ai
+                  <a href="mailto:contact@arktechnologies.ltd" className="text-ark-blue hover:underline">
+                    contact@arktechnologies.ltd
                   </a>
                 </p>
               </div>
