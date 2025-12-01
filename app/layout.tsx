@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     description: 'Cut lead response time, automate KYC, reduce EMR documentation time. Ark automates workflows across Real Estate, Banking, Healthcare, and Automotive.',
     images: [
       {
-        url: '/ark-logo.svg',
+        url: '/api/og',
         width: 1200,
         height: 630,
-        alt: 'Ark Technologies - Enterprise AI',
+        alt: 'Ark Technologies - Enterprise AI that moves at the speed of your operations',
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: '@arktechnologies',
     title: 'Ark Enterprise AI – Operations-First AI',
     description: 'Enterprise AI that moves at the speed of your operations. Automate workflows across Real Estate, Banking, Healthcare, and Automotive.',
-    images: ['/ark-logo.svg'],
+    images: ['/api/og'],
   },
   robots: {
     index: true,
