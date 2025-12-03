@@ -36,13 +36,13 @@ export async function POST(request: Request) {
 
     // Email recipients
     const recipients = [
-      'aasimm.khan@arktechnologies.ltd',
-      'deb.mukhuty@arktechnologies.ltd'
+      'aasimm.khan@ARKtechnologies.ltd',
+      'deb.mukhuty@ARKtechnologies.ltd'
     ];
 
     // Email content
     const mailOptions = {
-      from: `"Ark Technologies Website" <${process.env.GMAIL_USER}>`,
+      from: `"ARK Technologies Website" <${process.env.GMAIL_USER}>`,
       to: recipients.join(', '),
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -100,7 +100,7 @@ export async function POST(request: Request) {
             <div class="container">
               <div class="header">
                 <h1 style="margin: 0; font-size: 24px;">New Contact Form Submission</h1>
-                <p style="margin: 10px 0 0 0; opacity: 0.9;">From Ark Technologies Website</p>
+                <p style="margin: 10px 0 0 0; opacity: 0.9;">From ARK Technologies Website</p>
               </div>
               <div class="content">
                 <div class="field">
@@ -123,7 +123,7 @@ export async function POST(request: Request) {
                 ` : ''}
               </div>
               <div class="footer">
-                <p>This email was sent from the contact form on arktechnologies.ltd</p>
+                <p>This email was sent from the contact form on ARKtechnologies.ltd</p>
               </div>
             </div>
           </body>
@@ -138,7 +138,7 @@ Company: ${company}
 ${message ? `Message: ${message}` : ''}
 
 ---
-This email was sent from the contact form on arktechnologies.ltd
+This email was sent from the contact form on ARKtechnologies.ltd
       `,
     };
 
