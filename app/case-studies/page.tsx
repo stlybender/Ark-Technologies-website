@@ -51,7 +51,12 @@ export default function CaseStudiesPage() {
   const scrollToSection = (slug: string) => {
     const element = document.getElementById(slug);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Use 'nearest' on mobile for better scroll behavior with sticky nav
+      const isMobile = window.innerWidth < 768;
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: isMobile ? 'nearest' : 'start'
+      });
     }
   };
 
@@ -117,9 +122,9 @@ export default function CaseStudiesPage() {
         className="sticky top-20 z-[45] bg-white/95 backdrop-blur-sm border-b border-border-light"
         aria-label="Case study sectors navigation"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-20 py-4">
+        <div className="max-w-7xl mx-auto px-6 lg:px-20 py-3 md:py-4">
           <div 
-            className="flex items-center justify-center flex-wrap gap-3 overflow-x-auto scrollbar-hide"
+            className="flex items-center justify-center flex-wrap gap-2 md:gap-3 overflow-x-auto scrollbar-hide"
             role="tablist"
             aria-label="Select case study by sector"
           >

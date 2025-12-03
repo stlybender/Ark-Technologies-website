@@ -46,7 +46,7 @@ export default function CaseStudySection({ caseStudy }: CaseStudySectionProps) {
   return (
     <article 
       id={caseStudy.slug}
-      className={`relative py-20 md:py-32 ${styles.bg} scroll-mt-20`}
+      className={`relative py-20 md:py-32 ${styles.bg} scroll-mt-32 md:scroll-mt-20`}
       aria-labelledby={`${caseStudy.slug}-title`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
