@@ -18,7 +18,7 @@ export default function PrivacyPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-12 bg-gradient-to-br from-ark-blue-pale via-white to-white">
+      <section className="relative pt-32 pb-12 bg-gradient-to-br from-ARK-blue-pale via-white to-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-20">
           <h1 className="text-5xl md:text-6xl font-bold text-text-primary leading-tight mb-4">
             Privacy Policy
@@ -126,10 +126,10 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy, please contact us:
             </p>
             <p className="text-text-secondary leading-relaxed mb-2">
-              Email: <a href="mailto:privacy@arktechnologies.ai" className="text-ark-blue hover:underline">privacy@arktechnologies.ai</a>
+              Email: <a href="mailto:contact@arktechnologies.ltd" className="text-ARK-blue hover:underline">contact@arktechnologies.ltd</a>
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              Or visit our <a href="/contact" className="text-ark-blue hover:underline">contact page</a>.
+              Or visit our <a href="/contact" className="text-ARK-blue hover:underline">contact page</a>.
             </p>
 
           </div>

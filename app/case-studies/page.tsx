@@ -64,13 +64,13 @@ export default function CaseStudiesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://arktechnologies.ai',
+        item: 'https://ARKtechnologies.ai',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Case Studies',
-        item: 'https://arktechnologies.ai/case-studies',
+        item: 'https://ARKtechnologies.ai/case-studies',
       },
     ],
   };
@@ -106,7 +106,7 @@ export default function CaseStudiesPage() {
               Case Studies
             </h1>
             <p className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-              Real outcomes from Ark deployments across Real Estate, Automotive, Banking & Wealth, and Healthcare
+              Real outcomes from ARK deployments across Real Estate, Manufacturing & Distribution, Automotive, Banking & Wealth, and Healthcare
             </p>
           </div>
         </div>
@@ -114,48 +114,47 @@ export default function CaseStudiesPage() {
 
       {/* Sector Navigation Pills */}
       <nav 
-        className="sticky top-20 z-40 bg-white/95 backdrop-blur-sm border-b border-border-light"
+        className="sticky top-20 z-[45] bg-white/95 backdrop-blur-sm border-b border-border-light"
         aria-label="Case study sectors navigation"
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-20 py-4">
-          <ScrollReveal>
-            <div 
-              className="flex items-center justify-center flex-wrap gap-3 overflow-x-auto scrollbar-hide"
-              role="tablist"
-              aria-label="Select case study by sector"
-            >
-              {caseStudies.map((cs) => {
-                const isActive = activeSection === cs.slug;
-                const sectorColorMap = {
-                  'real-estate': 'border-ark-blue text-ark-blue bg-ark-blue-pale',
-                  'automotive': 'border-ark-cyan text-ark-cyan-dark bg-ark-cyan-pale',
-                  'banking-wealth': 'border-ark-orange text-ark-orange-dark bg-ark-orange-pale',
-                  'healthcare': 'border-ark-purple text-ark-purple-dark bg-ark-purple-pale'
-                };
-                const activeClass = sectorColorMap[cs.sectorKey];
-                
-                return (
-                  <button
-                    key={cs.slug}
-                    onClick={() => scrollToSection(cs.slug)}
-                    role="tab"
-                    aria-selected={isActive}
-                    aria-controls={cs.slug}
-                    className={`
-                      px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap
-                      transition-all duration-200 border-2
-                      ${isActive 
-                        ? activeClass
-                        : 'border-border-light text-text-secondary hover:border-border-medium hover:text-text-primary'
-                      }
-                    `}
-                  >
-                    {cs.sector}
-                  </button>
-                );
-              })}
-            </div>
-          </ScrollReveal>
+          <div 
+            className="flex items-center justify-center flex-wrap gap-3 overflow-x-auto scrollbar-hide"
+            role="tablist"
+            aria-label="Select case study by sector"
+          >
+            {caseStudies.map((cs) => {
+              const isActive = activeSection === cs.slug;
+              const sectorColorMap = {
+                'real-estate': 'border-ARK-blue text-ARK-blue bg-ARK-blue-pale',
+                'manufacturing-distribution': 'border-teal-300 text-teal-600 bg-teal-50',
+                'automotive': 'border-ARK-cyan text-ARK-cyan-dark bg-ARK-cyan-pale',
+                'banking-wealth': 'border-ARK-orange text-ARK-orange-dark bg-ARK-orange-pale',
+                'healthcare': 'border-ARK-purple text-ARK-purple-dark bg-ARK-purple-pale'
+              };
+              const activeClass = sectorColorMap[cs.sectorKey];
+              
+              return (
+                <button
+                  key={cs.slug}
+                  onClick={() => scrollToSection(cs.slug)}
+                  role="tab"
+                  aria-selected={isActive}
+                  aria-controls={cs.slug}
+                  className={`
+                    px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap
+                    transition-all duration-200 border-2
+                    ${isActive 
+                      ? activeClass
+                      : 'border-border-light text-text-secondary hover:border-border-medium hover:text-text-primary'
+                    }
+                  `}
+                >
+                  {cs.sector}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </nav>
 
@@ -166,7 +165,7 @@ export default function CaseStudiesPage() {
 
       {/* Final CTA */}
       <section 
-        className="py-20 bg-gradient-to-br from-ark-blue to-ark-cyan"
+        className="py-20 bg-gradient-to-br from-ARK-blue to-ARK-cyan"
         aria-labelledby="cta-heading"
       >
         <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
@@ -175,15 +174,15 @@ export default function CaseStudiesPage() {
               id="cta-heading"
               className="text-4xl md:text-5xl font-bold text-white mb-6"
             >
-              Ready to see Ark in action?
+              Ready to see ARK in action?
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Book a demo to see how Ark can transform your operations
+              Book a demo to see how ARK can transform your operations
             </p>
             <button 
               onClick={() => window.location.href = '/#contact'}
-              className="bg-white text-ark-blue hover:bg-white/90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
-              aria-label="Book a demo with Ark"
+              className="bg-white text-ARK-blue hover:bg-white/90 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              aria-label="Book a demo with ARK"
             >
               Book a Demo
             </button>

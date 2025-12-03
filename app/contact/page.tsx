@@ -5,11 +5,11 @@ import ContactForm from '@/components/ContactForm';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Contact Us – Book a Demo | Ark Enterprise AI',
-  description: 'Get in touch with Ark to see how enterprise AI can transform your operations. Book a demo to learn about our solutions for Real Estate, Banking, Healthcare, and Automotive industries.',
+  title: 'Contact Us – Book a Demo | ARK Enterprise AI',
+  description: 'Get in touch with ARK to see how enterprise AI can transform your operations. Book a demo to learn about our solutions for Real Estate, Banking, Healthcare, and Automotive industries.',
   openGraph: {
-    title: 'Contact Us – Book a Demo | Ark Enterprise AI',
-    description: 'Get in touch with Ark to see how enterprise AI can transform your operations across Real Estate, Banking, Healthcare, and Automotive.',
+    title: 'Contact Us – Book a Demo | ARK Enterprise AI',
+    description: 'Get in touch with ARK to see how enterprise AI can transform your operations across Real Estate, Banking, Healthcare, and Automotive.',
     type: 'website',
   },
 };
@@ -20,7 +20,7 @@ export default function ContactPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ark-blue-pale via-white to-ark-cyan-pale">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ARK-blue-pale via-white to-ARK-cyan-pale">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <Breadcrumb items={[
             { label: 'Home', href: '/' },
@@ -31,7 +31,7 @@ export default function ContactPage() {
               Let's Transform Your Operations
             </h1>
             <p className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-              Book a demo to see how Ark can help you automate workflows, clean data, and accelerate decisions.
+              Book a demo to see how ARK can help you automate workflows, clean data, and accelerate decisions.
             </p>
           </div>
         </div>
@@ -44,12 +44,12 @@ export default function ContactPage() {
             {/* Left Column - Info */}
             <div>
               <h2 className="text-3xl font-bold text-text-primary mb-6">
-                Why Ark?
+                Why ARK?
               </h2>
               
               <div className="space-y-6 mb-12">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-ark-blue rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-ARK-blue rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-ark-cyan rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-ARK-cyan rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-ark-orange rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-ARK-orange rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                     </svg>
@@ -91,26 +91,26 @@ export default function ContactPage() {
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-ark-blue rounded-full mr-3"></span>
-                    <a href="/case-studies#real-estate" className="text-text-secondary hover:text-ark-blue transition-colors">
+                    <span className="w-2 h-2 bg-ARK-blue rounded-full mr-3"></span>
+                    <a href="/case-studies#real-estate" className="text-text-secondary hover:text-ARK-blue transition-colors">
                       Real Estate
                     </a>
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-ark-cyan rounded-full mr-3"></span>
-                    <a href="/case-studies#automotive" className="text-text-secondary hover:text-ark-cyan transition-colors">
+                    <span className="w-2 h-2 bg-ARK-cyan rounded-full mr-3"></span>
+                    <a href="/case-studies#automotive" className="text-text-secondary hover:text-ARK-cyan transition-colors">
                       Automotive
                     </a>
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-ark-orange rounded-full mr-3"></span>
-                    <a href="/case-studies#banking-wealth" className="text-text-secondary hover:text-ark-orange transition-colors">
+                    <span className="w-2 h-2 bg-ARK-orange rounded-full mr-3"></span>
+                    <a href="/case-studies#banking-wealth" className="text-text-secondary hover:text-ARK-orange transition-colors">
                       Banking & Wealth
                     </a>
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-ark-purple rounded-full mr-3"></span>
-                    <a href="/case-studies#healthcare" className="text-text-secondary hover:text-ark-purple transition-colors">
+                    <span className="w-2 h-2 bg-ARK-purple rounded-full mr-3"></span>
+                    <a href="/case-studies#healthcare" className="text-text-secondary hover:text-ARK-purple transition-colors">
                       Healthcare
                     </a>
                   </li>
@@ -122,8 +122,8 @@ export default function ContactPage() {
                   <span className="font-semibold text-text-primary">Prefer email?</span>
                   <br />
                   Reach us at{' '}
-                  <a href="mailto:contact@arktechnologies.ltd" className="text-ark-blue hover:underline">
-                    contact@arktechnologies.ltd
+                  <a href="mailto:contact@ARKtechnologies.ltd" className="text-ARK-blue hover:underline">
+                    contact@ARKtechnologies.ltd
                   </a>
                 </p>
               </div>

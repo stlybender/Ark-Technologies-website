@@ -4,8 +4,8 @@ import HowWeWorkSection from '@/components/HowWeWorkSection';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata = {
-  title: 'Our Process – Ark Enterprise AI',
-  description: 'From discovery to deployment, see how Ark delivers measurable impact in weeks, not months.',
+  title: 'Our Process – ARK Enterprise AI',
+  description: 'From discovery to deployment, see how ARK delivers measurable impact in weeks, not months.',
 };
 
 export default function HowWeWorkPage() {

@@ -19,7 +19,7 @@ export default function CareersPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ark-blue-pale via-white to-ark-cyan-pale">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ARK-blue-pale via-white to-ARK-cyan-pale">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
           <Breadcrumb items={[
             { label: 'Home', href: '/' },
@@ -43,7 +43,7 @@ export default function CareersPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-bg-secondary rounded-xl p-8 border border-border-light">
-              <div className="w-12 h-12 bg-ark-blue rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-ARK-blue rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -55,7 +55,7 @@ export default function CareersPage() {
             </div>
 
             <div className="bg-bg-secondary rounded-xl p-8 border border-border-light">
-              <div className="w-12 h-12 bg-ark-cyan rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-ARK-cyan rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -67,7 +67,7 @@ export default function CareersPage() {
             </div>
 
             <div className="bg-bg-secondary rounded-xl p-8 border border-border-light">
-              <div className="w-12 h-12 bg-ark-orange rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-ARK-orange rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -88,63 +88,63 @@ export default function CareersPage() {
           
           <div className="space-y-8">
             <div className="bg-white rounded-xl p-8 border border-border-light">
-              <h3 className="text-2xl font-bold text-ark-blue mb-3">Engineers</h3>
+              <h3 className="text-2xl font-bold text-ARK-blue mb-3">Engineers</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Full-stack, backend, AI/ML, and infrastructure engineers who can build scalable, production-ready systems.
               </p>
               <ul className="space-y-2 text-text-secondary">
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-blue mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-blue mt-2 mr-3 flex-shrink-0"></span>
                   <span>Experience with Python, TypeScript, React, or Next.js</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-blue mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-blue mt-2 mr-3 flex-shrink-0"></span>
                   <span>Passion for AI/LLMs and enterprise integrations</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-blue mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-blue mt-2 mr-3 flex-shrink-0"></span>
                   <span>Comfortable working in fast-paced, customer-facing environments</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white rounded-xl p-8 border border-border-light">
-              <h3 className="text-2xl font-bold text-ark-cyan mb-3">Product & Design</h3>
+              <h3 className="text-2xl font-bold text-ARK-cyan mb-3">Product & Design</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Product managers and designers who understand enterprise workflows and can build intuitive solutions.
               </p>
               <ul className="space-y-2 text-text-secondary">
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-cyan mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-cyan mt-2 mr-3 flex-shrink-0"></span>
                   <span>Experience with enterprise B2B products</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-cyan mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-cyan mt-2 mr-3 flex-shrink-0"></span>
                   <span>Strong user research and data-driven decision-making skills</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-cyan mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-cyan mt-2 mr-3 flex-shrink-0"></span>
                   <span>Ability to balance user needs with technical constraints</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white rounded-xl p-8 border border-border-light">
-              <h3 className="text-2xl font-bold text-ark-orange mb-3">Sales & Customer Success</h3>
+              <h3 className="text-2xl font-bold text-ARK-orange mb-3">Sales & Customer Success</h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 Customer-facing roles helping enterprises deploy and scale our AI solutions.
               </p>
               <ul className="space-y-2 text-text-secondary">
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-orange mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-orange mt-2 mr-3 flex-shrink-0"></span>
                   <span>Experience selling or implementing enterprise software</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-orange mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-orange mt-2 mr-3 flex-shrink-0"></span>
                   <span>Understanding of operations-first industries (Real Estate, Banking, Healthcare, Automotive)</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-ark-orange mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-ARK-orange mt-2 mr-3 flex-shrink-0"></span>
                   <span>Technical aptitude and ability to learn complex systems</span>
                 </li>
               </ul>
@@ -161,14 +161,14 @@ export default function CareersPage() {
             We're actively hiring for the following roles:
           </p>
           
-          <div className="bg-ark-blue-pale border border-ark-blue/20 rounded-xl p-8 text-center">
+          <div className="bg-ARK-blue-pale border border-ARK-blue/20 rounded-xl p-8 text-center">
             <h3 className="text-2xl font-bold text-text-primary mb-4">We're Growing!</h3>
             <p className="text-lg text-text-secondary mb-6">
               We're hiring across engineering, product, and customer-facing roles. Even if you don't see a specific opening, we'd love to hear from you.
             </p>
             <a 
               href="/contact" 
-              className="inline-block bg-ark-blue hover:bg-ark-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              className="inline-block bg-ARK-blue hover:bg-ARK-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
             >
               Get in Touch
             </a>
@@ -183,7 +183,7 @@ export default function CareersPage() {
           
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-8 h-8 bg-ark-blue rounded-full flex items-center justify-center mt-1">
+              <div className="flex-shrink-0 w-8 h-8 bg-ARK-blue rounded-full flex items-center justify-center mt-1">
                 <span className="text-white font-bold">1</span>
               </div>
               <div className="ml-4">
@@ -195,7 +195,7 @@ export default function CareersPage() {
             </div>
 
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-8 h-8 bg-ark-cyan rounded-full flex items-center justify-center mt-1">
+              <div className="flex-shrink-0 w-8 h-8 bg-ARK-cyan rounded-full flex items-center justify-center mt-1">
                 <span className="text-white font-bold">2</span>
               </div>
               <div className="ml-4">
@@ -207,7 +207,7 @@ export default function CareersPage() {
             </div>
 
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-8 h-8 bg-ark-orange rounded-full flex items-center justify-center mt-1">
+              <div className="flex-shrink-0 w-8 h-8 bg-ARK-orange rounded-full flex items-center justify-center mt-1">
                 <span className="text-white font-bold">3</span>
               </div>
               <div className="ml-4">
@@ -219,7 +219,7 @@ export default function CareersPage() {
             </div>
 
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-8 h-8 bg-ark-purple rounded-full flex items-center justify-center mt-1">
+              <div className="flex-shrink-0 w-8 h-8 bg-ARK-purple rounded-full flex items-center justify-center mt-1">
                 <span className="text-white font-bold">4</span>
               </div>
               <div className="ml-4">
@@ -244,7 +244,7 @@ export default function CareersPage() {
           </p>
           <a 
             href="/contact" 
-            className="inline-block bg-ark-blue hover:bg-ark-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
+            className="inline-block bg-ARK-blue hover:bg-ARK-blue-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
           >
             Apply Now
           </a>
