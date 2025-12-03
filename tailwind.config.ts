@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        ark: {
+        ARK: {
           blue: {
             DEFAULT: '#0F4C81',
             dark: '#0A3A61',

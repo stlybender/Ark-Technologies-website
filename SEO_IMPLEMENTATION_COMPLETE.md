@@ -85,7 +85,7 @@ All tasks from the SEO interlinking plan have been successfully implemented. Her
 - ✅ Book a Demo → `/contact`
 
 ### Footer Links:
-- ✅ About Ark → `/about`
+- ✅ About ARK → `/about`
 - ✅ Careers → `/careers`
 - ✅ Contact → `/contact`
 - ✅ Platform → `/#capabilities`

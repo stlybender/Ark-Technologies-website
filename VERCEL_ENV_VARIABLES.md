@@ -16,7 +16,7 @@ GMAIL_APP_PASSWORD=gowg svix seui stra
 ### Option 1: Via Vercel Dashboard (Recommended)
 
 1. Go to your project on Vercel: https://vercel.com/dashboard
-2. Select your project (Ark Technologies Website)
+2. Select your project (ARK Technologies Website)
 3. Go to **Settings** → **Environment Variables**
 4. Add each variable:
    - **Name**: `GMAIL_USER`

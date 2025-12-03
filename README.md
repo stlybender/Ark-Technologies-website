@@ -1,8 +1,8 @@
-# Ark Enterprise AI – Landing Page Documentation
+# ARK Enterprise AI – Landing Page Documentation
 
 ## Project Overview
 
-Complete documentation for building a modern, Apple-like landing page for Ark Enterprise AI—a platform serving Real Estate, Banking/Fintech, Healthcare, and Automotive sectors with operations-focused AI solutions.
+Complete documentation for building a modern, Apple-like landing page for ARK Enterprise AI—a platform serving Real Estate, Banking/Fintech, Healthcare, and Automotive sectors with operations-focused AI solutions.
 
 This repository contains **everything you need** to build the landing page: positioning, copy, structure, design system, case studies, and implementation guidance.
 
@@ -70,7 +70,7 @@ This repository contains **everything you need** to build the landing page: posi
 npx create-next-app@latest ark-landing --typescript --tailwind --app
 cd ark-landing
 
-# 2. Configure Tailwind with Ark colors
+# 2. Configure Tailwind with ARK colors
 # → Copy color palette from VISUAL_DESIGN_SYSTEM.md into tailwind.config.js
 
 # 3. Build components
@@ -140,7 +140,7 @@ netlify deploy
 ## Documentation Structure
 
 ```
-/Ark Technologies Website
+/ARK Technologies Website
 ├── README.md (this file)
 ├── POSITIONING.md (strategy, tone, terminology)
 ├── HOMEPAGE_STRUCTURE.md (information architecture)
@@ -158,7 +158,7 @@ Use this checklist to track your progress:
 
 ### Phase 1: Foundation
 - [ ] Initialize project (Next.js + Tailwind or Vite + Tailwind)
-- [ ] Configure Tailwind with Ark color palette
+- [ ] Configure Tailwind with ARK color palette
 - [ ] Set up folder structure (`/app`, `/components`, `/lib`)
 - [ ] Create basic layout (Header, Footer)
 
@@ -280,7 +280,7 @@ Use these domain terms naturally throughout the site:
 
 1. **Read IMPLEMENTATION_GUIDE.md** for detailed build roadmap
 2. **Choose your tech stack** (Next.js + Tailwind recommended)
-3. **Initialize project** and configure Tailwind with Ark colors
+3. **Initialize project** and configure Tailwind with ARK colors
 4. **Build homepage components** section by section
 5. **Copy-paste content** from HOMEPAGE_COPY.md (it's ready to use)
 6. **Add case study pages** using CASE_STUDY_SYSTEM.md
@@ -312,13 +312,13 @@ All documentation is self-contained in this repository. If you have questions:
 
 ## License
 
-This documentation is proprietary to Ark Technologies. For internal use only.
+This documentation is proprietary to ARK Technologies. For internal use only.
 
 ---
 
 ## Credits
 
-**Positioning & Strategy:** Ark leadership + domain expertise  
+**Positioning & Strategy:** ARK leadership + domain expertise  
 **Content & Copy:** Based on real case studies (Real Estate, Automotive, Banking/Wealth, Healthcare)  
 **Design System:** Apple-inspired, ultra-minimal aesthetic  
 **Documentation:** Complete, production-ready
