@@ -159,7 +159,7 @@ const HowWeWorkSection = () => {
           </p>
           <a
             href="/#contact"
-            className="inline-flex items-center justify-center rounded-lg bg-ark-blue px-8 py-3 text-base font-medium text-white transition-colors hover:bg-ark-blue-dark focus:outline-none focus:ring-2 focus:ring-ark-blue focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg bg-ARK-blue px-8 py-3 text-base font-medium text-white transition-colors hover:bg-ARK-blue-dark focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:ring-offset-2"
           >
             Get Started Today
           </a>

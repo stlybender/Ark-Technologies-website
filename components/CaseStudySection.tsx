@@ -9,28 +9,34 @@ interface CaseStudySectionProps {
 
 const sectorStyles = {
   'real-estate': {
-    bg: 'bg-ark-blue-pale',
-    badge: 'bg-ark-blue-pale text-ark-blue border border-ark-blue/20',
-    accent: 'text-ark-blue',
-    border: 'border-ark-blue/10'
+    bg: 'bg-ARK-blue-pale',
+    badge: 'bg-ARK-blue-pale text-ARK-blue border border-ARK-blue/20',
+    accent: 'text-ARK-blue',
+    border: 'border-ARK-blue/10'
+  },
+  'manufacturing-distribution': {
+    bg: 'bg-teal-50',
+    badge: 'bg-teal-50 text-teal-600 border border-teal-300/20',
+    accent: 'text-teal-600',
+    border: 'border-teal-300/10'
   },
   'automotive': {
-    bg: 'bg-ark-cyan-pale',
-    badge: 'bg-ark-cyan-pale text-ark-cyan-dark border border-ark-cyan/20',
-    accent: 'text-ark-cyan-dark',
-    border: 'border-ark-cyan/10'
+    bg: 'bg-ARK-cyan-pale',
+    badge: 'bg-ARK-cyan-pale text-ARK-cyan-dark border border-ARK-cyan/20',
+    accent: 'text-ARK-cyan-dark',
+    border: 'border-ARK-cyan/10'
   },
   'banking-wealth': {
-    bg: 'bg-ark-orange-pale',
-    badge: 'bg-ark-orange-pale text-ark-orange-dark border border-ark-orange/20',
-    accent: 'text-ark-orange-dark',
-    border: 'border-ark-orange/10'
+    bg: 'bg-ARK-orange-pale',
+    badge: 'bg-ARK-orange-pale text-ARK-orange-dark border border-ARK-orange/20',
+    accent: 'text-ARK-orange-dark',
+    border: 'border-ARK-orange/10'
   },
   'healthcare': {
-    bg: 'bg-ark-purple-pale',
-    badge: 'bg-ark-purple-pale text-ark-purple-dark border border-ark-purple/20',
-    accent: 'text-ark-purple-dark',
-    border: 'border-ark-purple/10'
+    bg: 'bg-ARK-purple-pale',
+    badge: 'bg-ARK-purple-pale text-ARK-purple-dark border border-ARK-purple/20',
+    accent: 'text-ARK-purple-dark',
+    border: 'border-ARK-purple/10'
   }
 };
 
@@ -47,7 +53,7 @@ export default function CaseStudySection({ caseStudy }: CaseStudySectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           {/* Left Column - Sticky on desktop */}
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-32">
+            <div className="lg:sticky lg:top-40">
               <ScrollReveal>
                 <div 
                   className={`inline-block px-4 py-2 rounded-lg ${styles.badge} text-sm font-semibold mb-4`}

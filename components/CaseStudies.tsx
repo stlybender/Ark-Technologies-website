@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 const caseStudies = [
   {
     sector: 'Real Estate',
-    tagColor: 'bg-ark-blue-pale text-ark-blue',
+    tagColor: 'bg-ARK-blue-pale text-ARK-blue',
     title: 'Lead response time cut to under 60 seconds',
     client: 'Large residential real estate developer',
     impact: 'Automated calling, qualification, and site-visit booking from digital leads. Real-time CRM sync and funnel visibility for sales leadership.',
@@ -13,15 +13,23 @@ const caseStudies = [
   },
   {
     sector: 'Automotive',
-    tagColor: 'bg-ark-cyan-pale text-ark-cyan',
+    tagColor: 'bg-ARK-cyan-pale text-ARK-cyan',
     title: 'Fewer missed calls during peak load',
     client: 'Multi-brand car dealer group',
     impact: 'AI assistant handles inbound queries, schedules test drives and service appointments, and automates reminders—all integrated with dealer DMS/CRM.',
     link: '/case-studies#auto-dealer-ai-calls'
   },
   {
+    sector: 'Manufacturing & Distribution',
+    tagColor: 'bg-teal-50 text-teal-600',
+    title: '70% reduction in order processing time',
+    client: 'Mid-sized manufacturer and distributor handling B2B orders',
+    impact: 'AI automates order capture from emails, PDFs, and phone calls, enters directly into ERP with instant quote generation. Voice AI takes orders hands-free.',
+    link: '/case-studies#manufacturing-order-automation'
+  },
+  {
     sector: 'Banking & Wealth',
-    tagColor: 'bg-ark-orange-pale text-ark-orange',
+    tagColor: 'bg-ARK-orange-pale text-ARK-orange',
     title: 'Faster onboarding, lower NIGO rates',
     client: 'Mutual fund / wealth management firm',
     impact: 'Document automation (IDP/OCR) pre-fills KYC and SIP forms. Portfolio intelligence and AI chatbots drive engagement and upsell opportunities.',
@@ -29,7 +37,7 @@ const caseStudies = [
   },
   {
     sector: 'Healthcare – OPD',
-    tagColor: 'bg-ark-purple-pale text-ark-purple',
+    tagColor: 'bg-ARK-purple-pale text-ARK-purple',
     title: 'Reduced documentation time per patient',
     client: 'Multi-speciality hospital / clinic network',
     impact: 'AI-powered prescription assistant captures details and writes structured data into EMR/EHR. Better data quality, smoother pharmacy workflows.',
@@ -37,7 +45,7 @@ const caseStudies = [
   },
   {
     sector: 'Healthcare – Radiology',
-    tagColor: 'bg-ark-purple-pale text-ark-purple-dark',
+    tagColor: 'bg-ARK-purple-pale text-ARK-purple-dark',
     title: 'Improved radiology TAT and utilization',
     client: 'Hospital or diagnostic chain',
     impact: 'NLP layer extracts structured data from PACS/RIS reports. Operational dashboards surface TAT, modality utilization, and cost-optimization insights.',
@@ -75,11 +83,11 @@ export default function CaseStudies() {
             Built on real outcomes, not promises
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
-            See how enterprises across Real Estate, Banking, Healthcare, and Automotive use Ark to move faster.
+            See how enterprises across Real Estate, Automotive, Manufacturing, Banking, Healthcare use ARK to move faster.
           </p>
           <a 
             href="/case-studies"
-            className="inline-flex items-center text-ark-blue hover:text-ark-cyan font-semibold text-lg group"
+            className="inline-flex items-center text-ARK-blue hover:text-ARK-cyan font-semibold text-lg group"
           >
             View all case studies
             <svg 
@@ -99,7 +107,7 @@ export default function CaseStudies() {
             {caseStudies.map((study, index) => (
               <div
                 key={index}
-                className={`bg-white border-2 border-border-light rounded-2xl p-8 hover:border-ark-cyan hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-80 lg:w-auto flex-shrink-0 lg:flex-shrink ${
+                className={`bg-white border-2 border-border-light rounded-2xl p-8 hover:border-ARK-cyan hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-80 lg:w-auto flex-shrink-0 lg:flex-shrink ${
                   visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
@@ -125,7 +133,7 @@ export default function CaseStudies() {
                 {/* CTA */}
                 <a 
                   href={study.link}
-                  className="inline-flex items-center text-ark-blue hover:text-ark-cyan font-semibold text-sm group"
+                  className="inline-flex items-center text-ARK-blue hover:text-ARK-cyan font-semibold text-sm group"
                 >
                   View full story
                   <svg 

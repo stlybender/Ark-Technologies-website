@@ -6,7 +6,7 @@ export interface SolutionModule {
 export interface CaseStudy {
   slug: string;
   sector: string;
-  sectorKey: 'real-estate' | 'automotive' | 'banking-wealth' | 'healthcare';
+  sectorKey: 'real-estate' | 'automotive' | 'banking-wealth' | 'healthcare' | 'manufacturing-distribution';
   clientType: string;
   businessContext: string;
   keyProblems: string[];
@@ -34,7 +34,7 @@ export const caseStudies: CaseStudy[] = [
       'No reliable funnel data for CXO decisions on budgets and pricing'
     ],
     solution: {
-      overview: 'Ark implemented an AI Voice CRM system that auto-calls new leads within seconds, qualifies them through structured conversations, books site visits, and maintains complete CRM integration for full funnel visibility.',
+      overview: 'ARK implemented an AI Voice CRM system that auto-calls new leads within seconds, qualifies them through structured conversations, books site visits, and maintains complete CRM integration for full funnel visibility.',
       modules: [
         {
           title: 'AI Voice CRM & Calling',
@@ -89,6 +89,84 @@ export const caseStudies: CaseStudy[] = [
     oneLineSummary: 'AI voice agent that calls, qualifies, and books site visits within 60 seconds of lead capture'
   },
   {
+    slug: 'manufacturing-order-automation',
+    sector: 'Manufacturing & Distribution',
+    sectorKey: 'manufacturing-distribution',
+    clientType: 'Mid-sized manufacturer and distributor handling B2B orders across multiple channels',
+    businessContext: 'Company receives hundreds of orders daily via email, phone, and spreadsheets from customers and sales reps. The operations team manually processes each order, enters data into ERP, and generates quotes - a time-consuming, error-prone process that delays order fulfillment and frustrates customers.',
+    keyProblems: [
+      'Manual order entry from emails, PDFs, Excel sheets consuming hours daily',
+      'Quote generation taking hours or days due to complex pricing rules',
+      'High error rates in ERP data entry leading to fulfillment issues',
+      'Inconsistent pricing across customers and sales reps',
+      'Phone orders requiring dedicated staff to transcribe and process',
+      'No visibility into order pipeline or bottlenecks'
+    ],
+    solution: {
+      overview: 'ARK deployed an AI-powered order and quoting system that automatically captures orders from any channel, validates against inventory and pricing rules, and enters data directly into ERP - reducing processing time from hours to seconds.',
+      modules: [
+        {
+          title: 'AI Order Entry Automation',
+          bullets: [
+            'Captures order details from emails, PDFs, spreadsheets, and scanned documents',
+            'Extracts customer info, product codes, quantities, and delivery requirements',
+            'Validates orders against inventory levels and customer credit limits',
+            'Auto-enters complete orders into ERP with 95%+ accuracy',
+            'Flags exceptions for human review with suggested resolutions'
+          ]
+        },
+        {
+          title: 'Intelligent Quoting Engine',
+          bullets: [
+            'Generates quotes in seconds based on real-time pricing and availability',
+            'Applies customer-specific pricing, volume discounts, and contract terms',
+            'Handles complex product configurations and bundles',
+            'Syncs with ERP for accurate cost and margin calculations',
+            'Tracks quote versions and approval workflows'
+          ]
+        },
+        {
+          title: 'Voice AI for Phone Orders',
+          bullets: [
+            'Takes orders over the phone using natural language processing',
+            'Confirms product details, quantities, and delivery dates with caller',
+            'Asks clarifying questions for incomplete or ambiguous orders',
+            'Creates order in ERP immediately after call completion',
+            'Sends order confirmation via email or SMS automatically'
+          ]
+        },
+        {
+          title: 'ERP Integration & Analytics',
+          bullets: [
+            'Direct integration with SAP, Oracle, Microsoft Dynamics, and other ERPs',
+            'Real-time sync of orders, inventory, pricing, and customer data',
+            'Dashboard showing order volume, processing time, and error rates',
+            'Identifies bottlenecks and opportunities for process improvement',
+            'Audit trail for compliance and quality management'
+          ]
+        }
+      ]
+    },
+    results: [
+      '70% reduction in order processing time (hours to minutes)',
+      'Quote generation time cut from days to seconds',
+      '95%+ accuracy in ERP data entry, down from 85% manual accuracy',
+      '40% increase in orders processed per employee',
+      'Faster customer response times improving satisfaction and retention',
+      'Complete visibility into order pipeline and fulfillment status',
+      'Operations team freed to focus on exceptions and customer service'
+    ],
+    integrations: [
+      'ERP systems: SAP ECC, SAP S/4HANA, Oracle EBS, Oracle Fusion, Microsoft Dynamics, Infor M3, Epicor',
+      'Email platforms: Outlook, Gmail for order capture',
+      'Document management systems for POs and order confirmations',
+      'CRM systems: Salesforce, HubSpot for customer data sync',
+      'Telephony platforms: Twilio, RingCentral for voice order capture',
+      'BI platforms for analytics and reporting'
+    ],
+    oneLineSummary: 'AI automates order capture from any channel and enters directly into ERP with instant quote generation'
+  },
+  {
     slug: 'auto-dealer-ai-calls',
     sector: 'Automotive',
     sectorKey: 'automotive',
@@ -102,7 +180,7 @@ export const caseStudies: CaseStudy[] = [
       'Inconsistent customer experience across showrooms'
     ],
     solution: {
-      overview: 'Ark deployed an AI Calling Assistant that handles both inbound and outbound calls for sales enquiries, test drive scheduling, and service lifecycle management, with full integration to the dealer\'s DMS and CRM systems.',
+      overview: 'ARK deployed an AI Calling Assistant that handles both inbound and outbound calls for sales enquiries, test drive scheduling, and service lifecycle management, with full integration to the dealer\'s DMS and CRM systems.',
       modules: [
         {
           title: 'Sales Call Automation',
@@ -173,7 +251,7 @@ export const caseStudies: CaseStudy[] = [
       'High NIGO (Not In Good Order) rates causing delays and rework'
     ],
     solution: {
-      overview: 'Ark built a comprehensive automation suite covering document processing, portfolio intelligence, and personalized investor engagement, enabling faster onboarding, better portfolio management, and higher engagement rates.',
+      overview: 'ARK built a comprehensive automation suite covering document processing, portfolio intelligence, and personalized investor engagement, enabling faster onboarding, better portfolio management, and higher engagement rates.',
       modules: [
         {
           title: 'Document & Form Automation',
@@ -247,7 +325,7 @@ export const caseStudies: CaseStudy[] = [
       'Inconsistent prescription formats across doctors and departments'
     ],
     solution: {
-      overview: 'Ark developed an AI Prescription Assistant that acts as a digital scribe, taking doctor input through various methods and auto-generating complete, standardized prescriptions with full EMR integration.',
+      overview: 'ARK developed an AI Prescription Assistant that acts as a digital scribe, taking doctor input through various methods and auto-generating complete, standardized prescriptions with full EMR integration.',
       modules: [
         {
           title: 'AI Prescription Assistant',
@@ -312,7 +390,7 @@ export const caseStudies: CaseStudy[] = [
       'Revenue leakage due to suboptimal scheduling and capacity planning'
     ],
     solution: {
-      overview: 'Ark implemented an NLP-powered intelligence layer that extracts structured data from radiology reports and provides operational dashboards for performance monitoring, efficiency optimization, and quality management.',
+      overview: 'ARK implemented an NLP-powered intelligence layer that extracts structured data from radiology reports and provides operational dashboards for performance monitoring, efficiency optimization, and quality management.',
       modules: [
         {
           title: 'NLP Layer on Radiology Reports',

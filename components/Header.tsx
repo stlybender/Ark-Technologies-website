@@ -58,29 +58,29 @@ export default function Header() {
           <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <Image 
               src="/ark-logo.png" 
-              alt="Ark Technologies" 
+              alt="ARK Technologies" 
               width={48} 
               height={48}
               priority
             />
-            <span className="text-2xl font-bold text-text-primary">Ark</span>
+            <span className="text-2xl font-bold text-text-primary">ARK</span>
           </a>
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/" className="text-text-secondary hover:text-ARK-blue transition-colors">
               Home
             </a>
-            <a href="/about" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/about" className="text-text-secondary hover:text-ARK-blue transition-colors">
               About
             </a>
-            <a href="/how-we-work" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/how-we-work" className="text-text-secondary hover:text-ARK-blue transition-colors">
               Our Process
             </a>
-            <a href="/case-studies" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/case-studies" className="text-text-secondary hover:text-ARK-blue transition-colors">
               Case Studies
             </a>
-            <a href="/contact" className="text-text-secondary hover:text-ark-blue transition-colors">
+            <a href="/contact" className="text-text-secondary hover:text-ARK-blue transition-colors">
               Contact Us
             </a>
           </nav>
@@ -90,7 +90,7 @@ export default function Header() {
             {/* Hamburger Menu Button - Mobile Only */}
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden p-2 text-text-primary hover:text-ark-blue transition-colors focus:outline-none focus:ring-2 focus:ring-ark-blue focus:ring-offset-2 rounded"
+              className="md:hidden p-2 text-text-primary hover:text-ARK-blue transition-colors focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:ring-offset-2 rounded"
               aria-label="Toggle mobile menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -111,7 +111,7 @@ export default function Header() {
             </button>
 
             {/* CTA Button */}
-            <a href="/contact" className="bg-ark-blue hover:bg-ark-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
+            <a href="/contact" className="bg-ARK-blue hover:bg-ARK-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
               Book a Demo
             </a>
           </div>
@@ -141,7 +141,7 @@ export default function Header() {
           <div className="flex justify-end p-6">
             <button
               onClick={closeMobileMenu}
-              className="p-2 text-text-primary hover:text-ark-blue transition-colors focus:outline-none focus:ring-2 focus:ring-ark-blue rounded"
+              className="p-2 text-text-primary hover:text-ARK-blue transition-colors focus:outline-none focus:ring-2 focus:ring-ARK-blue rounded"
               aria-label="Close mobile menu"
             >
               <svg
@@ -166,35 +166,35 @@ export default function Header() {
             <a
               href="/"
               onClick={closeMobileMenu}
-              className="text-lg font-medium text-text-primary hover:text-ark-blue transition-colors py-2 border-b border-border-light"
+              className="text-lg font-medium text-text-primary hover:text-ARK-blue transition-colors py-2 border-b border-border-light"
             >
               Home
             </a>
             <a
               href="/about"
               onClick={closeMobileMenu}
-              className="text-lg font-medium text-text-primary hover:text-ark-blue transition-colors py-2 border-b border-border-light"
+              className="text-lg font-medium text-text-primary hover:text-ARK-blue transition-colors py-2 border-b border-border-light"
             >
               About
             </a>
             <a
               href="/how-we-work"
               onClick={closeMobileMenu}
-              className="text-lg font-medium text-text-primary hover:text-ark-blue transition-colors py-2 border-b border-border-light"
+              className="text-lg font-medium text-text-primary hover:text-ARK-blue transition-colors py-2 border-b border-border-light"
             >
               Our Process
             </a>
             <a
               href="/case-studies"
               onClick={closeMobileMenu}
-              className="text-lg font-medium text-text-primary hover:text-ark-blue transition-colors py-2 border-b border-border-light"
+              className="text-lg font-medium text-text-primary hover:text-ARK-blue transition-colors py-2 border-b border-border-light"
             >
               Case Studies
             </a>
             <a
               href="/contact"
               onClick={closeMobileMenu}
-              className="text-lg font-medium text-text-primary hover:text-ark-blue transition-colors py-2 border-b border-border-light"
+              className="text-lg font-medium text-text-primary hover:text-ARK-blue transition-colors py-2 border-b border-border-light"
             >
               Contact Us
             </a>
@@ -205,7 +205,7 @@ export default function Header() {
             <a
               href="/contact"
               onClick={closeMobileMenu}
-              className="block w-full text-center bg-ark-blue hover:bg-ark-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+              className="block w-full text-center bg-ARK-blue hover:bg-ARK-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
             >
               Book a Demo
             </a>

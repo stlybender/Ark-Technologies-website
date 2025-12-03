@@ -34,6 +34,18 @@ const SectorIcon = ({ iconType }: { iconType: string }) => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       );
+    case 'car':
+      return (
+        <svg className={iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+        </svg>
+      );
+    case 'factory':
+      return (
+        <svg className={iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      );
     default:
       return null;
   }
@@ -41,28 +53,40 @@ const SectorIcon = ({ iconType }: { iconType: string }) => {
 
 // Color mapping for dynamic classes
 const colorClasses: Record<string, { bg: string; text: string; border: string; gradient: string }> = {
-  'ark-blue': {
-    bg: 'bg-ark-blue-pale',
-    text: 'text-ark-blue',
-    border: 'border-ark-blue',
-    gradient: 'from-ark-blue to-ark-cyan'
+  'ARK-blue': {
+    bg: 'bg-ARK-blue-pale',
+    text: 'text-ARK-blue',
+    border: 'border-ARK-blue',
+    gradient: 'from-ARK-blue to-ARK-cyan'
   },
-  'ark-orange': {
-    bg: 'bg-ark-orange-pale',
-    text: 'text-ark-orange',
-    border: 'border-ark-orange',
-    gradient: 'from-ark-orange to-yellow-400'
+  'ARK-orange': {
+    bg: 'bg-ARK-orange-pale',
+    text: 'text-ARK-orange',
+    border: 'border-ARK-orange',
+    gradient: 'from-ARK-orange to-yellow-400'
   },
-  'ark-purple': {
-    bg: 'bg-ark-purple-pale',
-    text: 'text-ark-purple',
-    border: 'border-ark-purple',
-    gradient: 'from-ark-purple to-purple-400'
+  'ARK-purple': {
+    bg: 'bg-ARK-purple-pale',
+    text: 'text-ARK-purple',
+    border: 'border-ARK-purple',
+    gradient: 'from-ARK-purple to-purple-400'
+  },
+  'ARK-cyan': {
+    bg: 'bg-ARK-cyan-pale',
+    text: 'text-ARK-cyan-dark',
+    border: 'border-ARK-cyan',
+    gradient: 'from-ARK-cyan to-blue-400'
+  },
+  'ARK-teal': {
+    bg: 'bg-teal-50',
+    text: 'text-teal-600',
+    border: 'border-teal-300',
+    gradient: 'from-teal-500 to-cyan-500'
   }
 };
 
 export default function IndustryCard({ sector }: IndustryCardProps) {
-  const colors = colorClasses[sector.color] || colorClasses['ark-blue'];
+  const colors = colorClasses[sector.color] || colorClasses['ARK-blue'];
 
   return (
     <div className="h-full w-full flex items-center">

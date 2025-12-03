@@ -34,7 +34,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
             ) : (
               <Link 
                 href={item.href} 
-                className="text-text-tertiary hover:text-ark-blue transition-colors"
+                className="text-text-tertiary hover:text-ARK-blue transition-colors"
               >
                 {item.label}
               </Link>

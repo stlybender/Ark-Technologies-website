@@ -117,7 +117,7 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
         <p className="text-text-secondary mb-4">We couldn't send your message. Please try again.</p>
         <button
           onClick={() => setStatus('idle')}
-          className="text-ark-blue hover:underline font-semibold"
+          className="text-ARK-blue hover:underline font-semibold"
         >
           Try Again
         </button>
@@ -143,7 +143,7 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
             required
             value={formData.name}
             onChange={handleChange}
-            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ark-blue focus:border-transparent ${
+            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:border-transparent ${
               errors.name ? 'border-red-500' : 'border-border-medium'
             }`}
             placeholder="John Doe"
@@ -164,7 +164,7 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
             required
             value={formData.email}
             onChange={handleChange}
-            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ark-blue focus:border-transparent ${
+            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:border-transparent ${
               errors.email ? 'border-red-500' : 'border-border-medium'
             }`}
             placeholder="john@company.com"
@@ -185,7 +185,7 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
             required
             value={formData.company}
             onChange={handleChange}
-            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ark-blue focus:border-transparent ${
+            className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:border-transparent ${
               errors.company ? 'border-red-500' : 'border-border-medium'
             }`}
             placeholder="Acme Corp"
@@ -205,7 +205,7 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-border-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-ark-blue focus:border-transparent resize-none"
+            className="w-full px-4 py-3 border border-border-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-ARK-blue focus:border-transparent resize-none"
             placeholder="What challenges are you looking to solve?"
           />
         </div>
@@ -213,16 +213,16 @@ export default function ContactForm({ showTitle = true, className = '' }: Contac
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="w-full bg-ark-blue hover:bg-ark-blue-dark text-white px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="w-full bg-ARK-blue hover:bg-ARK-blue-dark text-white px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           {status === 'submitting' ? 'Sending...' : 'Book a Demo'}
         </button>
 
         <p className="text-xs text-text-tertiary text-center">
           By submitting this form, you agree to our{' '}
-          <a href="/privacy" className="text-ark-blue hover:underline">Privacy Policy</a>
+          <a href="/privacy" className="text-ARK-blue hover:underline">Privacy Policy</a>
           {' '}and{' '}
-          <a href="/terms" className="text-ark-blue hover:underline">Terms of Service</a>
+          <a href="/terms" className="text-ARK-blue hover:underline">Terms of Service</a>
         </p>
       </form>
     </div>

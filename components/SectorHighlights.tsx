@@ -7,7 +7,7 @@ const sectors = [
   {
     name: 'Real Estate',
     icon: 'building',
-    color: 'ark-blue',
+    color: 'ARK-blue',
     problems: [
       'Slow lead response from portals/ads',
       'Manual calling + inconsistent qualification',
@@ -21,9 +21,25 @@ const sectors = [
     ]
   },
   {
+    name: 'Manufacturing & Distribution',
+    icon: 'factory',
+    color: 'ARK-teal',
+    problems: [
+      'Manual order processing from emails and spreadsheets',
+      'Slow quote generation with inconsistent pricing',
+      'High ERP data entry burden and errors'
+    ],
+    solution: 'AI captures orders from emails, PDFs, and calls, auto-enters them into ERP. Instant quote generation with real-time pricing. Voice AI takes orders over the phone hands-free.',
+    outcomes: [
+      'Order processing time reduced by 70%',
+      'Quote generation in seconds vs. hours',
+      'Automated ERP sync with 95%+ accuracy'
+    ]
+  },
+  {
     name: 'Banking & Wealth',
     icon: 'dollar',
-    color: 'ark-orange',
+    color: 'ARK-orange',
     problems: [
       'Manual KYC and MF form filling',
       'Slow SIP registration',
@@ -39,7 +55,7 @@ const sectors = [
   {
     name: 'Healthcare',
     icon: 'medical',
-    color: 'ark-purple',
+    color: 'ARK-purple',
     problems: [
       'Doctors overburdened with EMR/EHR documentation',
       'Radiology reports stored as free text',
@@ -51,6 +67,22 @@ const sectors = [
       'Improved radiology TAT and utilization',
       'Better EMR data quality'
     ]
+  },
+  {
+    name: 'Automotive',
+    icon: 'car',
+    color: 'ARK-cyan',
+    problems: [
+      'Missed calls during peak hours and campaigns',
+      'Low conversion from enquiry to test drive',
+      'Manual service reminders consuming staff time'
+    ],
+    solution: 'AI assistant handles sales enquiries and books test drives automatically. Automates service lifecycle calls for reminders, warranty renewals, and feedback collection.',
+    outcomes: [
+      '30-40% reduction in missed calls',
+      'Higher test-drive booking rates',
+      'Improved service retention and workshop utilization'
+    ]
   }
 ];
 
@@ -59,8 +91,8 @@ export default function SectorHighlights() {
     <section id="capabilities" className="py-8 bg-bg-secondary relative overflow-hidden">
       {/* Subtle gradient overlays */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-ark-blue/5 via-transparent to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-ark-purple/5 via-transparent to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-ARK-blue/5 via-transparent to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-ARK-purple/5 via-transparent to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
